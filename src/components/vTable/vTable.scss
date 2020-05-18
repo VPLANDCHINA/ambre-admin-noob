@@ -1,0 +1,31 @@
+.vTableCom{
+  .el-table{
+    font-size: 12px!important;
+    color: #222222;
+  }
+  /deep/.has-gutter{
+    .tableHeader{
+      //el-table_1_column_1  is-center el-table-column--selection  is-leaf tableHeader
+      background-color:rgb(242,243,245) !important;
+    }
+  }
+
+  .img{
+    object-fit: contain;
+    margin:auto;
+    width:65px;
+    height: 60.5px;
+    display: block;
+    cursor: pointer;
+    border:2px solid rgb(242,243,245);
+  }
+  .handelBtn{
+    display:inline-block;
+    .btn{
+      width: 67px;
+      height: 32.4px;
+      line-height: 0;
+      margin:0 2.5px;
+    }
+  }
+}

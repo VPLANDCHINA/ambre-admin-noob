@@ -1,0 +1,41 @@
+@font-face {
+  font-family: PingFangSC ;
+  src: url("../font/pingFang.ttf");
+}
+*{
+  margin:0;
+  //font-family:PingFangSC-Regular, sans-serif;
+  // font-family:'Noto Sans SC';
+  //font-family: Helvetica Neue,Helvetica,PingFangSC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+}
+//滑动样式
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset006pxrgba(223, 223, 223, 1) !important;
+    border-radius: 5px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(223, 223, 223, 1) !important;
+    -webkit-box-shadow: inset006pxrgba(223, 223, 223, 1) !important;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(223, 223, 223, 1);
+}
+// button type="number"
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,62 @@
+/*
+ * @Author       : yuanrunwei
+ * @Date         : 2020-05-18 12:05:37
+ * @LastEditors  : yuanrunwei
+ * @LastEditTime : 2020-05-18 12:25:05
+ * @FilePath     : \ambre-admin-noob\src\components\vInput\vInput.scss
+ */ 
+.vInputCom{
+  min-width: 1150px;
+  .el-form{
+    height: 67px;
+    .el-form-item{
+      margin-right: 17px;
+      margin-bottom: 27px;
+      .el-input{
+        height: 40px;
+      }
+      /deep/.select{
+        .el-input__inner{
+          padding-left: 15px;
+        }
+      }
+      /deep/.el-date-editor{
+        padding-right: 0px;
+        //.el-range__icon{
+        //  display: none;
+        //  }
+        .el-range__close-icon{
+          width: 25px;
+        }
+        .el-input__inner{
+          padding-left: 15px;
+        }
+        /deep/.el-input__prefix{
+          left: 195px!important;
+          .el-icon-date:before {
+            content: "\e790";
+            color: #909399;
+          }
+        }
+      }
+    }
+    .search_btn,.reset_btn{
+      width: 95px;
+      height: 40px;
+    }
+    .reset_btn{
+      margin-left: 13px;
+    }
+  }
+  .tool{
+    margin-bottom:20px;
+  }
+  /deep/.el-icon-arrow-up:before {
+    content: "\e78f";
+    color: #909399;
+  }
+  /deep/.el-icon-arrow-down:before {
+    content: "\e790";
+    color: #909399;
+  }
+}

@@ -1,0 +1,19 @@
+.vBreadCom{
+  margin:88px 0 19px;
+  .el-breadcrumb{
+    height: 28px;
+    line-height: 28px;
+    .home{
+      .el-breadcrumb__inner {
+        font-size: 14px !important;
+        color: #9E9E9E !important;
+      }
+    }
+    .select{
+      .el-breadcrumb__inner {
+        font-size: 20px !important;
+        color: #000 !important;
+      }
+    }
+  }
+}

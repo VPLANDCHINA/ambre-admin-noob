@@ -1,0 +1,184 @@
+{
+  "id": "1591804",
+  "name": "dtpc-admin",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "778003",
+      "name": "店铺",
+      "font_class": "jinrudianpu",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "1009026",
+      "name": "问卷",
+      "font_class": "wenjuan",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "1155506",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "1391285",
+      "name": "商品管理",
+      "font_class": "shangpinguanli",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "2842517",
+      "name": "账号",
+      "font_class": "zhanghao",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "3005283",
+      "name": "取消",
+      "font_class": "quxiao",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "3247646",
+      "name": "商品管理",
+      "font_class": "shangpinguanli1",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "3298423",
+      "name": "加号",
+      "font_class": "jiahao-copy",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "3446700",
+      "name": "账号",
+      "font_class": "ef-zhanghao",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "4486699",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "4701701",
+      "name": "店铺 (2)",
+      "font_class": "dianpu-copy",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "5722543",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e731",
+      "unicode_decimal": 59185
+    },
+    {
+      "icon_id": "6260742",
+      "name": "头像",
+      "font_class": "touxiang",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "6730191",
+      "name": "验证码",
+      "font_class": "yanzhengma",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "8019605",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "9349169",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "9645417",
+      "name": "删除／数字面板编辑态",
+      "font_class": "chuyidong",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11543012",
+      "name": "编 辑",
+      "font_class": "bianji",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "12205622",
+      "name": "眼睛",
+      "font_class": "yanjing",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "12226479",
+      "name": "yanjing",
+      "font_class": "yanjing1",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "12226481",
+      "name": "shijian",
+      "font_class": "shijian1",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "12226485",
+      "name": "眼睛2",
+      "font_class": "yanjing3",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "12797207",
+      "name": "shangpinguanli (1)@2x",
+      "font_class": "shangpinguanlix",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "12797277",
+      "name": "dianpu-copy@2x",
+      "font_class": "dianpu-copyx",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "12797452",
+      "name": "shangpinguanli@2x",
+      "font_class": "caigouguanli",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    }
+  ]
+}

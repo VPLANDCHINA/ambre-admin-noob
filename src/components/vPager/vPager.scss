@@ -1,0 +1,43 @@
+/*
+ * @Author       : yuanrunwei
+ * @Date         : 2020-05-18 12:05:37
+ * @LastEditors  : yuanrunwei
+ * @LastEditTime : 2020-05-18 14:19:27
+ * @FilePath     : \ambre-admin-noob\src\components\vPager\vPager.scss
+ */ 
+.vPagerCom{
+  text-align: right;
+  margin-top:37px;
+  margin-bottom: 30px;
+  height: 25px;
+  .el-pagination{
+    height: 25px;
+    padding: 0px!important;
+    .el-pager{
+      li{
+        background-color:rgba(0, 0, 0, 0) !important;
+        height: 25px;
+      }
+      .number,.el-icon-more{
+        background-color:rgba(0, 0, 0, 0) !important;
+      }
+    }
+    .btn-next,.btn-prev{
+      background-color:rgba(0, 0, 0, 0) !important;
+      height: 25px;
+    }
+    .el-pagination__jump{
+      margin-left: 21px;
+      height: 25px;
+      .el-input{
+        height: 25px;
+        margin: 0 9px 0 13px;
+        .el-input__inner{
+          background-color:rgba(0, 0, 0, 0) !important;
+          height: 25px!important;
+        }
+      }
+    }
+  }
+  // background-color:#fff;
+}

@@ -1,0 +1,70 @@
+/*
+ * @Author       : yuanrunwei
+ * @Date         : 2020-05-18 12:05:37
+ * @LastEditors  : yuanrunwei
+ * @LastEditTime : 2020-05-18 14:51:51
+ * @FilePath     : \ambre-admin-noob\src\components\vNav\vNav.scss
+ */ 
+.vNavCom{
+  position: fixed;
+  height:100%;
+  z-index:999999999;
+  .el-menu{
+    border-right:none;
+    .is-active{
+      .a_menu{
+        color: #ffffff;
+      }
+    }
+    /deep/.el-submenu{
+      .el-submenu__title{
+        padding-left: 38px!important;
+        font-size: 16px;
+        .a_menu{
+          margin-left: 17px;
+        }
+      }
+    }
+  }
+
+  .el-menu-item{
+    text-align: left;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    line-height:40px !important;
+    height:40px !important;
+    padding-left:71px !important;
+    width:180px;
+    min-width: 80px !important;
+  }
+  .el-menu-item.is-active{
+    background-color:rgb(141,114,249) !important;
+    color:#fff;
+    width:180px;
+    min-width: 80px;
+
+  }
+  .el-menu-item{
+    &:hover{
+        background:rgba(141,114,249,1) !important;
+    }
+    &:active,&:visited{
+        background:rgba(141,114,249,1) !important;
+    }
+  }
+  .logo{
+    width:100%;
+    text-align: center;
+    img{
+      padding:20px 0;
+      display: inline-block;
+      width:150px;
+    }
+  }
+}
+.f-16{
+  font-size: 16px;
+}
+.f-17{
+  font-size: 17px;
+}
