@@ -1,4 +1,13 @@
+/*
+ * @Author       : yuanrunwei
+ * @Date         : 2020-05-18 12:05:37
+ * @LastEditors  : yuanrunwei
+ * @LastEditTime : 2020-05-18 19:21:24
+ * @FilePath     : \ambre-admin-noob\src\common\api\axios.js
+ */
 import axios from 'axios'
+import { Message } from 'element-ui'
+let api = ''
 
 const service = axios.create({
   baseURL: process.env.VUE_APP_API,
@@ -7,35 +16,52 @@ const service = axios.create({
 
 service.interceptors.request.use(
   config => {
-    // config.data.from = 'web'
     if (!config.data.reqdata) {
       config.data.reqdata = {}
     }
-    config.data.userid = parseInt(localStorage.getItem('storeId')) || ''
+    api = config.url
     return config
   },
   error => {
-    return Promise.reject(error)
+    Promise.reject(error)
   }
 )
 
 service.interceptors.response.use(
-  response => {
-    if (response.status !== 200) {
-      return response.data
-    } else {
-      if (response.data.state === 146) {
-      } else if (response.data.state !== 100 && response.data.state !== 102) {
-        return response.data
-      } else if (response.data.state === 102) {
-        return response.data
+  res => {
+    return new Promise((resolve, reject) => {
+      if (res.status === 200) {
+        if (res.data.state !== 100) {
+          Message({
+            message: res.data.msg,
+            type: 'error',
+            duration: 5 * 1000
+          })
+          const whiteList = ['test', 'production']
+          if (whiteList.indexOf(process.env.NODE_ENV) !== -1) {
+            let url = `http://monitor.info666.com/monitor/alert?projectAbbr=feiduoduo-test&errorMsg=接口：${api}(${res.data.msg})&logPath=前端开发环境(${process.env.NODE_ENV})`
+            axios.get(url)
+          }
+          reject(res.data.msg)
+        } else {
+          resolve(res.data)
+        }
       } else {
-        return response.data
+        Message({
+          message: '服务器异常',
+          type: 'error',
+          duration: 5 * 1000
+        })
+        reject(res)
       }
-    }
+    })
   },
   error => {
-    return Promise.reject(error)
+    Message({
+      message: '请求异常' + error,
+      type: 'error',
+      duration: 5 * 1000
+    })
   }
 )
 export default service
